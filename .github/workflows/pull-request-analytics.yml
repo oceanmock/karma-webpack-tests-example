@@ -1,4 +1,8 @@
 name: "PR Analytics"
+
+permissions:
+  issues: write
+  
 on:
   workflow_dispatch:
     inputs:
