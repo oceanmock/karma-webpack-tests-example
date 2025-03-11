@@ -28,5 +28,5 @@ jobs:
           REPORT_DATE_START: ${{ inputs.report_date_start }}
           REPORT_DATE_END: ${{ inputs.report_date_end }}
       - name: cleanup
-        if: failure() || cancelled()
+        if: cancelled()
         run: echo "Таймаут! Чистим ресурсы..."
